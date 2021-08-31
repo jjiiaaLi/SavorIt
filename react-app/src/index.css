@@ -14,3 +14,13 @@
     width:120px;
     height:120px;
 }
+
+.phoneScreen{
+    width:375px;
+    height:812px;
+    border-width: 6px;
+    border-style:solid;
+    border-radius:9px;
+    margin-left:540px;
+    margin-top: 110px;
+}
