@@ -1,0 +1,12 @@
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.navItem, .logoutBtn{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+}
+.navLink{
+    text-decoration: none;
+    color:black;
+}
