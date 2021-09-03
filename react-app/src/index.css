@@ -40,3 +40,41 @@
     z-index: 2;
 }
 
+.searchContainer{
+    display:flex;
+    justify-content: center;
+    border-radius: 12px;
+    z-index: 3;
+    border-style:solid;
+    border-width:thin;
+    overflow: hidden;
+}
+.searchDiv{
+    position:relative;
+    background-color: white;
+    
+}
+.searchLable{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    z-index: 4;
+    margin-top: 9px;
+    margin-left: 5px;
+    font-weight: bold;
+    color:rgb(120, 120, 120);
+}
+.searchInput{
+    width:330px;
+    height:30px;
+    border:hidden;
+    outline-width: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 8px;
+}
+.searchBtn{
+    cursor:pointer;
+    font-size: 18px;
+    background-color: white;
+    border-width:0;
+}

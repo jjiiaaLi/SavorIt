@@ -11,10 +11,17 @@ export default function Landing(){
         <div className="landingTopBackground" />
         <div className="landingTopContent">
           <img className="logo" src={Logo} alt="logo"></img>
-          <div>
-            <input></input>
-            <input></input>
-            <button>Find</button>
+          <div className="searchContainer">
+            <div className="searchDiv">
+              <lable className="searchLable">Search</lable>
+              <input className="searchInput" placeholder='Ramen' />
+            </div>
+            <div className="searchDiv">
+              <lable className="searchLable">Location</lable>
+              <input className="searchInput" placeholder='Houston, Texas'/>
+            </div>
+
+            <button className="searchBtn">Find</button>
           </div>
         </div>
       </div>
