@@ -11,16 +11,27 @@
     color:black;
 }
 .logo{
-    width:120px;
-    height:120px;
+    width:100px;
+    height:100px;
+    position:relative;
+    margin:0%;
 }
 
-.phoneScreen{
-    width:375px;
-    height:812px;
-    border-width: 6px;
-    border-style:solid;
-    border-radius:9px;
-    margin-left:540px;
-    margin-top: 110px;
+.landingTopBackground{
+    background-size: cover;
+    height:570px;
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/190208-delish-ramen-horizontal-093-1550096715.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+
+}
+
+.landingTopContent{
+    position:relative;
+
+}
+
+.navBtnContainer{
+    display:flex;
+    
 }
