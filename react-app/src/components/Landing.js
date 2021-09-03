@@ -7,14 +7,16 @@ import '../index.css'
 export default function Landing(){
 
     return (
-      <>
+      <div className="landingContainer">
         <div className="landingTopBackground" />
         <div className="landingTopContent">
-            <div></div>
-            
-            <p>Create An Account</p>
-            <p>Login</p>
+          <img className="logo" src={Logo} alt="logo"></img>
+          <div>
+            <input></input>
+            <input></input>
+            <button>Find</button>
+          </div>
         </div>
-      </>
+      </div>
     );
 }
