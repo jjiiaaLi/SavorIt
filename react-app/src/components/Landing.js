@@ -20,7 +20,6 @@ export default function Landing(){
               <lable className="searchLable">Location</lable>
               <input className="searchInput" placeholder='Houston, Texas'/>
             </div>
-
             <button className="searchBtn">Find</button>
           </div>
         </div>
