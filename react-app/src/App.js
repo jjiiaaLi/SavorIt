@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import UsersList from "./components/UsersList";
 import User from "./components/User";
+import AddPost from "./components/AddPost";
 import { authenticate } from "./store/session";
 import Landing from './components/Landing';
 
@@ -33,6 +34,9 @@ function App() {
         <Route path="/login" exact={true}>
           <LoginForm />
         </Route>
+        <ProtectedRoute path='/addPost/:userId'>
+          <AddPost />
+        </ProtectedRoute>
         <Route path="/sign-up" exact={true}>
           <SignUpForm />
         </Route>

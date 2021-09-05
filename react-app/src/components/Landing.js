@@ -11,6 +11,7 @@ export default function Landing(){
       <div className="landingContainer">
         <div className="landingTopBackground" />
         <div className="landingTopContent">
+          <Link to={`/AddPost/${userId}`} >New Post</Link>
           <img className="logo" src={Logo} alt="logo"></img>
           <div className="searchContainer">
             <div className="searchDiv">

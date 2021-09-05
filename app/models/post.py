@@ -1,5 +1,5 @@
 from .db import db
-
+from app.forms import Post
 
 class Post(db.Model):
     __tablename__= 'posts'
