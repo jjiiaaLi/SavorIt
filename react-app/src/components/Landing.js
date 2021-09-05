@@ -1,4 +1,5 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
+import {useSelector,useDispatch} from 'react-redux';
 import { Link } from 'react-router-dom';
 import NearYou from "./NearYou";
 import LogoutButton from './auth/LogoutButton';
@@ -6,12 +7,17 @@ import Logo from '../image/Savor.png';
 import '../index.css'
 
 export default function Landing(){
+    const dispatch = useDispatch()
+    const user = useSelector(state=>Object.values(state.session))
+    
+
+   
 
     return (
       <div className="landingContainer">
         <div className="landingTopBackground" />
         <div className="landingTopContent">
-          <Link to={`/AddPost/${userId}`} >New Post</Link>
+          {user[0] && <Link to={`/AddPost/${user[0].id}`} >New Post</Link>}
           <img className="logo" src={Logo} alt="logo"></img>
           <div className="searchContainer">
             <div className="searchDiv">

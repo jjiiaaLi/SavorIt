@@ -1,5 +1,5 @@
-from flask import Blueprint
-from app.models import PostForm
+from flask import Blueprint, session
+from app.forms.post_form import PostForm
 
 
 
