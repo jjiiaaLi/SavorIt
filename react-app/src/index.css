@@ -14,7 +14,7 @@
     width:120px;
     height:120px;
     position:relative;
-    margin-top: 130px;
+    margin-top: 120px;
     margin-bottom: 40px;
 }
 .landingContainer{
@@ -84,4 +84,7 @@
     z-index: 1000;
     position: relative;
     margin-top: 300px;
+}
+.addNewPostLink{
+    margin-top: 10px;
 }
