@@ -7,7 +7,9 @@ import '../index.css'
 
 const NavBar = () => {
   const user = useSelector(state=>Object.values(state.session))
-  console.log(user[0])
+  
+  
+
   return (
     <nav>
       <div className="navContainer">

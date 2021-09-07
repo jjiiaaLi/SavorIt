@@ -26,39 +26,48 @@ const LoginForm = () => {
     setPassword(e.target.value);
   };
 
+  const demoLogin = async(e) => {
+    e.preventDefault();
+    await dispatch(login('demoshop@email.io','password'))
+
+  };
+
   if (user) {
     return <Redirect to="/" />;
   }
 
   return (
-    <form onSubmit={onLogin}>
-      <div>
-        {errors.map((error) => (
-          <div>{error}</div>
-        ))}
-      </div>
-      <div>
-        <label htmlFor="email">Email</label>
-        <input
-          name="email"
-          type="text"
-          placeholder="Email"
-          value={email}
-          onChange={updateEmail}
-        />
-      </div>
-      <div>
-        <label htmlFor="password">Password</label>
-        <input
-          name="password"
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={updatePassword}
-        />
-        <button type="submit">Login</button>
-      </div>
-    </form>
+    <>
+      <form onSubmit={onLogin}>
+        <div>
+          {errors.map((error) => (
+            <div>{error}</div>
+          ))}
+        </div>
+        <div>
+          <label htmlFor="email">Email</label>
+          <input
+            name="email"
+            type="text"
+            placeholder="Email"
+            value={email}
+            onChange={updateEmail}
+          />
+        </div>
+        <div>
+          <label htmlFor="password">Password</label>
+          <input
+            name="password"
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={updatePassword}
+          />
+          <button type="submit">Login</button>
+        </div>
+      </form>
+      <button onClick={demoLogin}>DemoLogin</button>
+    </>
   );
 };
 
