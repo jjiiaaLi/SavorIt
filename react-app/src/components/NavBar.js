@@ -2,7 +2,6 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import LogoutButton from './auth/LogoutButton';
-import Logo from "../image/Savor.png";
 import '../index.css'
 
 const NavBar = () => {
