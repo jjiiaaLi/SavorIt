@@ -9,7 +9,7 @@ class Post(db.Model):
     location = db.Column(db.String(80), nullable=False)
     itemName = db.Column(db.String(200), nullable=False)
     comment = db.Column(db.String(500))
-    image = db.Column(db.String(100))
+    image = db.Column(db.LargeBinary)
 
     users = db.relationship('User', back_populates='posts')
 

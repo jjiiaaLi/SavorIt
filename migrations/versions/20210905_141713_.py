@@ -24,7 +24,7 @@ def upgrade():
     sa.Column('location', sa.String(length=80), nullable=False),
     sa.Column('itemName', sa.String(length=200), nullable=False),
     sa.Column('comment', sa.String(length=500), nullable=True),
-    sa.Column('image', sa.String(length=100), nullable=True),
+    sa.Column('image', sa.LargeBinary, nullable=True),
     sa.PrimaryKeyConstraint('id')
     )
     # ### end Alembic commands ###

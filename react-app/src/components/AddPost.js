@@ -8,11 +8,13 @@ export default function AddPost(){
     const [location, setLocation] = useState('');
     const [itemName, setItemName] = useState('');
     const [comment, setComment] = useState('');
+    const [imgFile, setImgFile] = useState();
     
     const imageInput = useRef()
 
     const handleImageSelect = e =>{
         const file = e.target.files[0]
+        setImgFile(file)
         const reader = new FileReader()
         const {current} = imageInput
         current.file = file
@@ -24,7 +26,7 @@ export default function AddPost(){
 
     const submitPost = (e)=>{
         e.preventDefault()
-        
+        console.log(imgFile)
     }
 
     return(
