@@ -17,7 +17,7 @@
     margin-top: 120px;
     margin-bottom: 40px;
 }
-.landingContainer{
+.landingContainer {
     position:relative;
     height:100%;
     display: flex;
@@ -90,7 +90,35 @@
 }
 
 .imgPreview {
+    width:auto;
+    height:auto;
+    max-width: 450px;
+    max-height: 550px;
+    border-style: none;
+    margin-top:20px;
+}
+
+.postForm{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:20px;
+}
+
+.postInput{
     width:200px;
-    height:200px;
-    border-style: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:17px;
+    margin-top:20px;
+}
+
+.postBtn{
+    width:208px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:17px;
+    margin-top:20px;
+}
+.postLable{
+    margin-top:20px;
 }

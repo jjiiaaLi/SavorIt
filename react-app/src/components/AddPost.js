@@ -27,17 +27,32 @@ export default function AddPost(){
         
     }
 
-    return(
+    return (
+      <div>
+        <form className="postForm" onSubmit={submitPost}>
+          <img className="imgPreview" ref={imageInput} />
+          <input type="file" onChange={handleImageSelect} />
+          <lable className="postLable">Name the item</lable>
+          <input
+            className="postInput"
+            value={itemName}
+            onChange={(e) => {
+              setItemName(e.target.value);
+            }}
+          />
+          <lable className="postLable">Reviews/Comments</lable>
+          <textarea
+            className="postInput"
+            value={comment}
+            onChange={(e) => {
+              setComment(e.target.value);
+            }}
+          />
 
-        <div>
-            <form onSubmit={submitPost}>
-                <img className='imgPreview' ref={imageInput}/>
-                <input type='file'  onChange={handleImageSelect}/>
-                <input value={itemName} onChange={e=>{setItemName(e.target.value)}}/>
-                <input value={comment} onChange={e=>{setComment(e.target.value)}}/>
-                
-                <button type='submit'>submit</button>
-            </form>
-        </div>
-    )
+          <button className="postBtn" type="submit">
+            Submit Post
+          </button>
+        </form>
+      </div>
+    );
 }
