@@ -61,5 +61,9 @@ def edit_crud(id):
 @post_routes.rout('/<int:id>', methods = ['DELETE'])
 def delete_crud(id):
 
+    crud_to_remove = Crud.query.filter_by(id = id).first()
 
-    return "",200
+    db.session.delete(crud_to_remove)
+    db.session.commit()
+
+    return "crud deleted successfully",200
